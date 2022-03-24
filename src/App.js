@@ -1,6 +1,6 @@
 import React from 'react';
 import { GlobalStyle, Wrapper, Form } from './components/styles/GlobalStyles';
-import MultiEmailInput from "./components/MultiEmailInput";
+import EmailToInput from "./components/EmailToInput";
 
 function App() {
 	return (
@@ -8,7 +8,7 @@ function App() {
 			<GlobalStyle />
 			<Wrapper>
 				<Form>
-					<MultiEmailInput />
+					<EmailToInput />
 				</Form>
 			</Wrapper>
 		</>

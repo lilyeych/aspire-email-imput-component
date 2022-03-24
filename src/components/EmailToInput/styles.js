@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { colors, sizes } from "../styles/variables";
 
-export const MultiInputStyles = styled.div`
+export const EmailToInputStyles = styled.div`
 	display: flex;
 	width: 100%;
 	min-height: 5rem;

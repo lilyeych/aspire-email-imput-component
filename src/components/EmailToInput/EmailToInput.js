@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Input from "../Input";
 import Chips from "../Chips";
-import { MultiInputStyles } from './styles'
+import { EmailToInputStyles } from './styles'
 
-function MultiEmailInput(props) {
+function EmailToInput(props) {
 	const [inputValue, setInputValue] = useState('')
 	const [emails, setEmails] = useState([]);
 
@@ -69,14 +69,14 @@ function MultiEmailInput(props) {
 	
 	return (
 		<>
-			<MultiInputStyles>
+			<EmailToInputStyles>
 					{emails.map(email => (
 					<Chips key={email.id} id={email.id} status={email.status} value={email.email} onClick={handleDelete}></Chips>
 					))}
 				<Input type="email" name="emails" value={inputValue} onChange={handleChange} onKeyDown={handleKeyDown} />
-			</MultiInputStyles>
+			</EmailToInputStyles>
 		</>
 	);
 }
 
-export default MultiEmailInput;
+export default EmailToInput;

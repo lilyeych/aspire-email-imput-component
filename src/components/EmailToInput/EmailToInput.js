@@ -37,8 +37,6 @@ function EmailToInput(props) {
 						}
 					]);
 				}
-				console.log(emails);
-
 				setInputValue('');
 			}
 		}
@@ -47,9 +45,6 @@ function EmailToInput(props) {
 	function handleDelete(event) {
 		let deletedEmailID = Number(event.target.dataset.id);
 		setEmails(emails.filter(email => email.id !== deletedEmailID));
-		console.log(emails);
-
-		
 	}
 
 	function isValid(email) {
